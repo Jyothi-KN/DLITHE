@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <body align="center" bgcolor="pink"></body>
+<h2>JavaScript HTML Events</h2>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<br>
+<br>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").hover(function(){
+    $(this).css("background-color", "yellow");
+    }, function(){
+    $(this).css("background-color", "blue");
+  });
+});
+</script>
+</head>
+<body>
+<h2>Hover JavaScript</h2>
+<p>Java Script is used mainly for creating web pages. It allows us to add dynamic behavior
+    to the webpage and add special effects to the web page.
+</p>
+
+</body>
+</html>
+
+
+<br>
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Mouse Over And Mouse Leave JavaScript</h2>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://pngimg.com/uploads/smiley/smiley_PNG27.png" alt="Smiley" width="500" height="500">
+<br>
+
+
+<br>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://th.bing.com/th/id/OIP.KEwvnZ-iIw4vVvjyHJIbgwHaG4?pid=ImgDet&rs=1" alt="Smiley" width="40" height="50">
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+</body>
+</html>
+<br>
+<br>
+
